@@ -12,8 +12,8 @@
     now you can choose any solidity version by changing the version 
 -create 3 folders by name
 i- contracts(exact same name folder nothing change): smart contract file
-ii- test: for testing purpose
-iii- scripts: to write deployement scripts
+ii- test: for testing purpose  (npx hardhat test)
+iii- scripts: to write deployement scripts  (npx hardhat run scripts/deploy.js)
  - install test using (npm install --save-dev @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai) command.
  - debugging the contract in solidity file using javascript 
   import "hardhat/console.sol"

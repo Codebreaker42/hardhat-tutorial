@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity >=0.5.0 <0.9.0;
 
+// debugging in hardhat 
+import "hardhat/console.sol"; // run the js code in .sol file using hardhat;
 contract Token{
     string public name="Hardhat";
     string public symbol="HHT"; //hht: hard har token
@@ -14,6 +16,7 @@ contract Token{
     }
     // function to transfer the tokens into another addressess
     function transferTokens(address to,uint amount) external{
+        console.log("** Sender balances is: %s tokens",balances[msg.sender]);
         require(balances[msg.sender]>=amount,"Not Enough Tokens");
         balances[msg.sender]=balances[msg.sender]-amount;
         balances[to]=balances[to]+amount;

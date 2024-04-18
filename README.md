@@ -29,3 +29,26 @@ This tutorial will guide you through the steps to set up a Hardhat project and s
 module.exports = {
   solidity: "0.8.9",
 };
+
+Create the necessary folders:
+
+Create a folder named "contracts" to store your smart contract files.
+Create a folder named "test" to write tests for your smart contracts.
+Create a folder named "scripts" to write deployment scripts for your smart contracts.
+Install testing dependencies: Use the command npm install --save-dev @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai to install the necessary testing dependencies.
+
+Debugging the contract: To debug the contract in the Solidity file using JavaScript, import "hardhat/console.sol" in your contract file.
+
+
+Testing
+
+To run the tests for your smart contracts, use the command npx hardhat test.
+
+
+Deployment
+
+To deploy your smart contracts, write deployment scripts in the "scripts" folder and use the command npx hardhat run scripts/deploy.js.
+
+
+Happy coding!
+
